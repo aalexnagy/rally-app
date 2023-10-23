@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->integer('min');
             $table->integer('max');
-            $table->timestamp('date_created')->useCurrent();
-            $table->timestamp('date_updated')->useCurrentOnUpdate();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate();
         });
     }
 

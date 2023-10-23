@@ -16,8 +16,8 @@ return new class extends Migration
             $table->integer('id_team');
             $table->string('key');
             $table->json('id_participants');
-            $table->timestamp('date_created')->useCurrent();
-            $table->timestamp('date_updated')->useCurrentOnUpdate();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate();
         });
     }
 

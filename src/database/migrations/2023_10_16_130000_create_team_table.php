@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id('id');
             $table->string('name');
             $table->longText('payload');
-            $table->timestamp('date_created')->useCurrent();
-            $table->timestamp('date_updated')->useCurrentOnUpdate();
+            $table->timestamp('created_At')->useCurrent();
+            $table->timestamp('updated_at')->useCurrentOnUpdate();
         });
     }
 
